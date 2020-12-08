@@ -1,0 +1,913 @@
+MENUS = [{
+    "id": 1,
+    "name": "彩りガーデンサラダ",
+    "category": "sidedish",
+    "type": "salad",
+    "price": 299,
+    "calorie": 130,
+    "salt": 1.1
+}, {
+    "id": 2,
+    "name": "小エビのサラダ",
+    "category": "sidedish",
+    "type": "salad",
+    "price": 349,
+    "calorie": 115,
+    "salt": 1.3
+}, {
+    "id": 3,
+    "name": "やわらかチキンのサラダ",
+    "category": "sidedish",
+    "type": "salad",
+    "price": 299,
+    "calorie": 134,
+    "salt": 1.2
+}, {
+    "id": 4,
+    "name": "わかめサラダ",
+    "category": "sidedish",
+    "type": "salad",
+    "price": 299,
+    "calorie": 92,
+    "salt": 2.1
+}, {
+    "id": 5,
+    "name": "イタリアンサラダ",
+    "category": "sidedish",
+    "type": "salad",
+    "price": 299,
+    "calorie": 196,
+    "salt": 0.7
+}, {
+    "id": 6,
+    "name": "シーフードサラダ",
+    "category": "sidedish",
+    "type": "salad",
+    "price": 599,
+    "calorie": 229,
+    "salt": 2.4
+}, {
+    "id": 7,
+    "name": "半熟卵とポークのサラダ",
+    "category": "sidedish",
+    "type": "salad",
+    "price": 599,
+    "calorie": 433,
+    "salt": 2.3
+}, {
+    "id": 8,
+    "name": "コーンクリームスープ",
+    "category": "sidedish",
+    "type": "soup",
+    "price": 149,
+    "calorie": 142,
+    "salt": 1.1
+}, {
+    "id": 9,
+    "name": "冷たいパンプキンスープ(季節限定)",
+    "category": "sidedish",
+    "type": "soup",
+    "price": 149,
+    "calorie": 105,
+    "salt": 0.9
+}, {
+    "id": 10,
+    "name": "たっぷり野菜のミネストローネ(季節限定)",
+    "category": "sidedish",
+    "type": "soup",
+    "price": 299,
+    "calorie": 222,
+    "salt": 2.1
+}, {
+    "id": 11,
+    "name": "削りたてペコリーノチーズ",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 100,
+    "calorie": 59,
+    "salt": 0.6
+}, {
+    "id": 12,
+    "name": "ミニフィセル",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 169,
+    "calorie": 188,
+    "salt": 1
+}, {
+    "id": 13,
+    "name": "ガーリックトースト",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 189,
+    "calorie": 252,
+    "salt": 1.1
+}, {
+    "id": 14,
+    "name": "セットドリンクバー",
+    "category": "drink",
+    "type": "drinkbar",
+    "price": 190,
+    "calorie": 0,
+    "salt": 0
+}, {
+    "id": 15,
+    "name": "辛味チキン",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 299,
+    "calorie": 374,
+    "salt": 2.2
+}, {
+    "id": 16,
+    "name": "アスパラガスのオーブン焼き(季節限定)",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 299,
+    "calorie": 221,
+    "salt": 1.1
+}, {
+    "id": 17,
+    "name": "ポップコーンシュリンプ",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 299,
+    "calorie": 215,
+    "salt": 1.4
+}, {
+    "id": 18,
+    "name": "エスカルゴのオーブン焼き",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 399,
+    "calorie": 256,
+    "salt": 1.6
+}, {
+    "id": 19,
+    "name": "ムール貝のガーリック焼き",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 399,
+    "calorie": 164,
+    "salt": 1.3
+}, {
+    "id": 20,
+    "name": "野菜ソースのグリルソーセージ",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 399,
+    "calorie": 570,
+    "salt": 3.1
+}, {
+    "id": 21,
+    "name": "チョリソー",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 399,
+    "calorie": 393,
+    "salt": 2
+}, {
+    "id": 22,
+    "name": "柔らか青豆の温サラダ",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 199,
+    "calorie": 213,
+    "salt": 1.1
+}, {
+    "id": 23,
+    "name": "ほうれん草のソテー",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 199,
+    "calorie": 138,
+    "salt": 1.2
+}, {
+    "id": 24,
+    "name": "キャベツとアンチョビのソテー",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 199,
+    "calorie": 80,
+    "salt": 1.5
+}, {
+    "id": 25,
+    "name": "ポテトのグリル",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 199,
+    "calorie": 366,
+    "salt": 2
+}, {
+    "id": 26,
+    "name": "セロリのピクルス(季節限定)",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 199,
+    "calorie": 52,
+    "salt": 1.3
+}, {
+    "id": 27,
+    "name": "真イカのパプリカソース",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 199,
+    "calorie": 138,
+    "salt": 1.1
+}, {
+    "id": 28,
+    "name": "フォッカチオ",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 119,
+    "calorie": 214,
+    "salt": 0.8
+}, {
+    "id": 29,
+    "name": "プチフォッカ",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 139,
+    "calorie": 214,
+    "salt": 0.8
+}, {
+    "id": 30,
+    "name": "セットプチフォッカ",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 79,
+    "calorie": 107,
+    "salt": 0.4
+}, {
+    "id": 31,
+    "name": "グラスワイン",
+    "category": "drink",
+    "type": "alcohol",
+    "price": 100,
+    "calorie": 0,
+    "salt": 0
+}, {
+    "id": 32,
+    "name": "デカンタ・250ml",
+    "category": "drink",
+    "type": "alcohol",
+    "price": 200,
+    "calorie": 0,
+    "salt": 0
+}, {
+    "id": 33,
+    "name": "デカンタ・500ml",
+    "category": "drink",
+    "type": "alcohol",
+    "price": 399,
+    "calorie": 0,
+    "salt": 0
+}, {
+    "id": 34,
+    "name": "キリン一番搾り（ジョッキ）",
+    "category": "drink",
+    "type": "alcohol",
+    "price": 399,
+    "calorie": 0,
+    "salt": 0
+}, {
+    "id": 35,
+    "name": "キリン一番搾り（グラス）",
+    "category": "drink",
+    "type": "alcohol",
+    "price": 299,
+    "calorie": 0,
+    "salt": 0
+}, {
+    "id": 36,
+    "name": "ストロングゼロダブルレモン",
+    "category": "drink",
+    "type": "alcohol",
+    "price": 379,
+    "calorie": 0,
+    "salt": 0
+}, {
+    "id": 37,
+    "name": "マグナム・1500ml",
+    "category": "drink",
+    "type": "alcohol",
+    "price": 1080,
+    "calorie": 0,
+    "salt": 0
+}, {
+    "id": 38,
+    "name": "グラッパ",
+    "category": "drink",
+    "type": "alcohol",
+    "price": 379,
+    "calorie": 0,
+    "salt": 0
+}, {
+    "id": 39,
+    "name": "ランブルスコセッコ（赤）辛口",
+    "category": "drink",
+    "type": "alcohol",
+    "price": 1080,
+    "calorie": 0,
+    "salt": 0
+}, {
+    "id": 40,
+    "name": "ランブルスコ（ロゼ）甘口",
+    "category": "drink",
+    "type": "alcohol",
+    "price": 1080,
+    "calorie": 0,
+    "salt": 0
+}, {
+    "id": 41,
+    "name": "ベルデッキオ（辛口・中）",
+    "category": "drink",
+    "type": "alcohol",
+    "price": 1080,
+    "calorie": 0,
+    "salt": 0
+}, {
+    "id": 42,
+    "name": "キャンティ（辛口・やや重い）",
+    "category": "drink",
+    "type": "alcohol",
+    "price": 1080,
+    "calorie": 0,
+    "salt": 0
+}, {
+    "id": 43,
+    "name": "キャンティルフィナリゼルパ（辛口・重い）",
+    "category": "drink",
+    "type": "alcohol",
+    "price": 2160,
+    "calorie": 0,
+    "salt": 0
+}, {
+    "id": 44,
+    "name": "サイゼリヤプレミアム（辛口・重い）",
+    "category": "drink",
+    "type": "alcohol",
+    "price": 2160,
+    "calorie": 0,
+    "salt": 0
+}, {
+    "id": 45,
+    "name": "サントリーオールフリー",
+    "category": "drink",
+    "type": "alcohol",
+    "price": 259,
+    "calorie": 0,
+    "salt": 0
+}, {
+    "id": 46,
+    "name": "フレッシュチーズとトマトのサラダ",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 299,
+    "calorie": 203,
+    "salt": 0.4
+}, {
+    "id": 47,
+    "name": "フレッシュチーズとトマトのサラダ(Wサイズ)",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 598,
+    "calorie": 406,
+    "salt": 0.8
+}, {
+    "id": 48,
+    "name": "プロシュート",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 399,
+    "calorie": 162,
+    "salt": 1.8
+}, {
+    "id": 49,
+    "name": "プロシュート(Wサイズ)",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 798,
+    "calorie": 324,
+    "salt": 3.6
+}, {
+    "id": 50,
+    "name": "熟成ミラノサラミ",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 299,
+    "calorie": 95,
+    "salt": 1.1
+}, {
+    "id": 51,
+    "name": "熟成ミラノサラミ(Wサイズ)",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 598,
+    "calorie": 190,
+    "salt": 2.2
+}, {
+    "id": 52,
+    "name": "マルゲリータピザ",
+    "category": "meal",
+    "type": "pizza",
+    "price": 399,
+    "calorie": 568,
+    "salt": 2.5
+}, {
+    "id": 53,
+    "name": "パンチェッタのピザ",
+    "category": "meal",
+    "type": "pizza",
+    "price": 399,
+    "calorie": 646,
+    "salt": 2.9
+}, {
+    "id": 54,
+    "name": "野菜ときのこのピザ",
+    "category": "meal",
+    "type": "pizza",
+    "price": 399,
+    "calorie": 610,
+    "salt": 2.7
+}, {
+    "id": 55,
+    "name": "やわらかイカのアンチョビのピザ",
+    "category": "meal",
+    "type": "pizza",
+    "price": 499,
+    "calorie": 593,
+    "salt": 4.6
+}, {
+    "id": 56,
+    "name": "バッファローモッツァレラのピザ",
+    "category": "meal",
+    "type": "pizza",
+    "price": 499,
+    "calorie": 575,
+    "salt": 2.3
+}, {
+    "id": 57,
+    "name": "ミラノサラミのピザ",
+    "category": "meal",
+    "type": "pizza",
+    "price": 499,
+    "calorie": 606,
+    "salt": 3.5
+}, {
+    "id": 58,
+    "name": "ほうれん草のグラタン(季節限定)",
+    "category": "meal",
+    "type": "gratin",
+    "price": 399,
+    "calorie": 521,
+    "salt": 1.9
+}, {
+    "id": 59,
+    "name": "シーフードグラタン",
+    "category": "meal",
+    "type": "gratin",
+    "price": 499,
+    "calorie": 537,
+    "salt": 2.2
+}, {
+    "id": 60,
+    "name": "アラビアータ",
+    "category": "meal",
+    "type": "pasta",
+    "price": 399,
+    "calorie": 591,
+    "salt": 4.2
+}, {
+    "id": 61,
+    "name": "ミートソースボロニア風",
+    "category": "meal",
+    "type": "pasta",
+    "price": 399,
+    "calorie": 582,
+    "salt": 4.3
+}, {
+    "id": 62,
+    "name": "半熟卵のミートソースボロニア風",
+    "category": "meal",
+    "type": "pasta",
+    "price": 468,
+    "calorie": 672,
+    "salt": 4.5
+}, {
+    "id": 63,
+    "name": "アーリオ・オーリオ",
+    "category": "meal",
+    "type": "pasta",
+    "price": 299,
+    "calorie": 560,
+    "salt": 3.2
+}, {
+    "id": 64,
+    "name": "キャベツのペペロンチーノ",
+    "category": "meal",
+    "type": "pasta",
+    "price": 399,
+    "calorie": 686,
+    "salt": 3.5
+}, {
+    "id": 65,
+    "name": "タラコソースシシリー風",
+    "category": "meal",
+    "type": "pasta",
+    "price": 399,
+    "calorie": 605,
+    "salt": 3.7
+}, {
+    "id": 66,
+    "name": "スープ入りトマト味ボンゴレ(季節限定)",
+    "category": "meal",
+    "type": "pasta",
+    "price": 499,
+    "calorie": 686,
+    "salt": 4.8
+}, {
+    "id": 67,
+    "name": "パルマ風スパゲッティ",
+    "category": "meal",
+    "type": "pasta",
+    "price": 399,
+    "calorie": 700,
+    "salt": 4.2
+}, {
+    "id": 68,
+    "name": "イカの墨入りスパゲッティ",
+    "category": "meal",
+    "type": "pasta",
+    "price": 499,
+    "calorie": 610,
+    "salt": 3.8
+}, {
+    "id": 69,
+    "name": "カルボナーラ",
+    "category": "meal",
+    "type": "pasta",
+    "price": 499,
+    "calorie": 865,
+    "salt": 4.1
+}, {
+    "id": 70,
+    "name": "アスパラガスとエビのクリームスパゲッティ(季節限定)",
+    "category": "meal",
+    "type": "pasta",
+    "price": 499,
+    "calorie": 711,
+    "salt": 3.5
+}, {
+    "id": 71,
+    "name": "アラビアータ(Wサイズ)",
+    "category": "meal",
+    "type": "pasta",
+    "price": 770,
+    "calorie": 1182,
+    "salt": 8.4
+}, {
+    "id": 72,
+    "name": "ミートソースボロニア風(Wサイズ)",
+    "category": "meal",
+    "type": "pasta",
+    "price": 770,
+    "calorie": 1164,
+    "salt": 8.6
+}, {
+    "id": 73,
+    "name": "アーリオ・オーリオ(Wサイズ)",
+    "category": "meal",
+    "type": "pasta",
+    "price": 574,
+    "calorie": 1120,
+    "salt": 6.4
+}, {
+    "id": 74,
+    "name": "キャベツのペペロンチーノ(Wサイズ)",
+    "category": "meal",
+    "type": "pasta",
+    "price": 770,
+    "calorie": 1372,
+    "salt": 7
+}, {
+    "id": 75,
+    "name": "タラコソースシシリー風(Wサイズ)",
+    "category": "meal",
+    "type": "pasta",
+    "price": 770,
+    "calorie": 1210,
+    "salt": 7.4
+}, {
+    "id": 76,
+    "name": "パルマ風スパゲッティ(Wサイズ)",
+    "category": "meal",
+    "type": "pasta",
+    "price": 770,
+    "calorie": 1400,
+    "salt": 8.4
+}, {
+    "id": 77,
+    "name": "イカの墨入りスパゲッティ(Wサイズ)",
+    "category": "meal",
+    "type": "pasta",
+    "price": 976,
+    "calorie": 1220,
+    "salt": 7.6
+}, {
+    "id": 78,
+    "name": "カルボナーラ(Wサイズ)",
+    "category": "meal",
+    "type": "pasta",
+    "price": 976,
+    "calorie": 1730,
+    "salt": 8.2
+}, {
+    "id": 79,
+    "name": "アスパラガスとエビのクリームスパゲッティ(季節限定)(Wサイズ)",
+    "category": "meal",
+    "type": "pasta",
+    "price": 976,
+    "calorie": 1422,
+    "salt": 7
+}, {
+    "id": 80,
+    "name": "トッピング半熟卵",
+    "category": "sidedish",
+    "type": "appetizer",
+    "price": 69,
+    "calorie": 90,
+    "salt": 0.2
+}, {
+    "id": 81,
+    "name": "ミラノ風ドリア",
+    "category": "meal",
+    "type": "doria",
+    "price": 299,
+    "calorie": 542,
+    "salt": 2.7
+}, {
+    "id": 82,
+    "name": "半熟卵のミラノ風ドリア",
+    "category": "meal",
+    "type": "doria",
+    "price": 368,
+    "calorie": 632,
+    "salt": 2.9
+}, {
+    "id": 83,
+    "name": "セットプチフォッカ付きミラノ風ドリア",
+    "category": "meal",
+    "type": "doria",
+    "price": 378,
+    "calorie": 649,
+    "salt": 3.1
+}, {
+    "id": 84,
+    "name": "いろどり野菜のミラノ風ドリア",
+    "category": "meal",
+    "type": "doria",
+    "price": 399,
+    "calorie": 590,
+    "salt": 3.1
+}, {
+    "id": 85,
+    "name": "エビとイカのドリア",
+    "category": "meal",
+    "type": "doria",
+    "price": 499,
+    "calorie": 624,
+    "salt": 2.9
+}, {
+    "id": 86,
+    "name": "シーフードパエリア",
+    "category": "meal",
+    "type": "rice",
+    "price": 599,
+    "calorie": 602,
+    "salt": 3.6
+}, {
+    "id": 87,
+    "name": "エビと野菜のトマトクリームリゾット",
+    "category": "meal",
+    "type": "rice",
+    "price": 399,
+    "calorie": 302,
+    "salt": 2.2
+}, {
+    "id": 88,
+    "name": "ハヤシ&ターメリックライス",
+    "category": "meal",
+    "type": "rice",
+    "price": 499,
+    "calorie": 638,
+    "salt": 3.3
+}, {
+    "id": 89,
+    "name": "半熟卵のハヤシ＆ターメリックライス",
+    "category": "meal",
+    "type": "rice",
+    "price": 568,
+    "calorie": 728,
+    "salt": 3.5
+}, {
+    "id": 90,
+    "name": "ミックスグリル",
+    "category": "meal",
+    "type": "hamburg",
+    "price": 599,
+    "calorie": 823,
+    "salt": 3.8
+}, {
+    "id": 91,
+    "name": "ハンバーグステーキ",
+    "category": "meal",
+    "type": "hamburg",
+    "price": 399,
+    "calorie": 514,
+    "salt": 2.3
+}, {
+    "id": 92,
+    "name": "デミグラスソースのハンバーグ",
+    "category": "meal",
+    "type": "hamburg",
+    "price": 499,
+    "calorie": 628,
+    "salt": 3.6
+}, {
+    "id": 93,
+    "name": "野菜ソースのハンバーグ(ディアボラ風)",
+    "category": "meal",
+    "type": "hamburg",
+    "price": 499,
+    "calorie": 585,
+    "salt": 2.6
+}, {
+    "id": 94,
+    "name": "イタリアンハンバーグ",
+    "category": "meal",
+    "type": "hamburg",
+    "price": 499,
+    "calorie": 633,
+    "salt": 2.5
+}, {
+    "id": 95,
+    "name": "焼肉とハンバーグの盛合せ",
+    "category": "meal",
+    "type": "hamburg",
+    "price": 599,
+    "calorie": 709,
+    "salt": 3.4
+}, {
+    "id": 96,
+    "name": "若鶏のグリル(ディアボラ風)",
+    "category": "meal",
+    "type": "chicken",
+    "price": 499,
+    "calorie": 541,
+    "salt": 2.1
+}, {
+    "id": 97,
+    "name": "柔らかチキンのチーズ焼き",
+    "category": "meal",
+    "type": "chicken",
+    "price": 499,
+    "calorie": 588,
+    "salt": 2
+}, {
+    "id": 98,
+    "name": "パンチェッタと若鶏のグリル",
+    "category": "meal",
+    "type": "chicken",
+    "price": 599,
+    "calorie": 663,
+    "salt": 2.5
+}, {
+    "id": 99,
+    "name": "リブステーキ",
+    "category": "meal",
+    "type": "steak",
+    "price": 999,
+    "calorie": 621,
+    "salt": 1.5
+}, {
+    "id": 100,
+    "name": "ライス",
+    "category": "sidedish",
+    "type": "rice",
+    "price": 169,
+    "calorie": 303,
+    "salt": 0
+}, {
+    "id": 101,
+    "name": "ラージライス",
+    "category": "sidedish",
+    "type": "rice",
+    "price": 219,
+    "calorie": 454,
+    "salt": 0
+}, {
+    "id": 102,
+    "name": "スモールライス",
+    "category": "sidedish",
+    "type": "rice",
+    "price": 119,
+    "calorie": 151,
+    "salt": 0
+}, {
+    "id": 103,
+    "name": "カプチーノ(アイスケーキ)(季節限定)",
+    "category": "sidedish",
+    "type": "dessert",
+    "price": 199,
+    "calorie": 114,
+    "salt": 0.1
+}, {
+    "id": 104,
+    "name": "ティラミス(アイスケーキ)",
+    "category": "sidedish",
+    "type": "dessert",
+    "price": 199,
+    "calorie": 131,
+    "salt": 0.1
+}, {
+    "id": 105,
+    "name": "シナモンフォッカチオ",
+    "category": "sidedish",
+    "type": "dessert",
+    "price": 169,
+    "calorie": 246,
+    "salt": 0.8
+}, {
+    "id": 106,
+    "name": "プリンとカプチーノの盛合せ",
+    "category": "sidedish",
+    "type": "dessert",
+    "price": 399,
+    "calorie": 330,
+    "salt": 0.2
+}, {
+    "id": 107,
+    "name": "プリンとティラミスの盛合せ",
+    "category": "sidedish",
+    "type": "dessert",
+    "price": 399,
+    "calorie": 347,
+    "salt": 0.2
+}, {
+    "id": 108,
+    "name": "ミルクアイスのせシナモンフォッカチオ",
+    "category": "sidedish",
+    "type": "dessert",
+    "price": 319,
+    "calorie": 346,
+    "salt": 0.9
+}, {
+    "id": 109,
+    "name": "ミルクジェラート",
+    "category": "sidedish",
+    "type": "dessert",
+    "price": 199,
+    "calorie": 100,
+    "salt": 0.1
+}, {
+    "id": 110,
+    "name": "シチリア産レモンのソルベ",
+    "category": "sidedish",
+    "type": "dessert",
+    "price": 199,
+    "calorie": 127,
+    "salt": 0
+}, {
+    "id": 111,
+    "name": "イタリアンプリン",
+    "category": "sidedish",
+    "type": "dessert",
+    "price": 249,
+    "calorie": 216,
+    "salt": 0.1
+}, {
+    "id": 112,
+    "name": "チョコレートケーキ",
+    "category": "sidedish",
+    "type": "dessert",
+    "price": 299,
+    "calorie": 166,
+    "salt": 0.1
+}, {
+    "id": 113,
+    "name": "コーヒーゼリー",
+    "category": "sidedish",
+    "type": "dessert",
+    "price": 299,
+    "calorie": 162,
+    "salt": 0.1
+}, {
+    "id": 114,
+    "name": "トリフアイスクリーム",
+    "category": "sidedish",
+    "type": "dessert",
+    "price": 369,
+    "calorie": 164,
+    "salt": 0.1
+}]
