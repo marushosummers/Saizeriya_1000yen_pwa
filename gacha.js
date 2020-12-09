@@ -7,22 +7,20 @@ let totalPrice = 0
 let totalCalorie = 0
 let totalSalt = 0
 
-var sql = 'SELECT *' +
-    'FROM ? d ' +
-    'WHERE 1 = 1 and d.price <= ?';
+var sql = 'SELECT * FROM ? d WHERE d.price <= ?';
 
 while (budget <= 1000) {
     var candidates = alasql(sql, [MENUS, budget]);
     if (candidates.length == 0) {
         break;
     }
-    var rand2 = Math.floor(Math.random() * candidates.length);
-    var food = candidates[rand2];
+    var randNum = Math.floor(Math.random() * candidates.length);
+    var food = candidates[randNum];
     result.innerHTML += '<div class="box menu"><h2>' + food.name + '</h2><p>' + food.price + '円　' + food.calorie + 'kcal　塩分 ' + Math.round(food.salt * 10) / 10 + 'g</p></div>';
     totalPrice += food.price
     totalCalorie += food.calorie
     totalSalt += food.salt
-    budget -= candidates[rand2].price
+    budget -= candidates[randNum].price
 }
 result.innerHTML += '<div class="box rst"><h2>計 ' + totalPrice + '円　' + totalCalorie + 'kcal　塩分' + Math.round(totalSalt * 10) / 10 + 'g</h2></div>';
 

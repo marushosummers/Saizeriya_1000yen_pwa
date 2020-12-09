@@ -3,8 +3,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=750">
 <link rel=stylesheet type=text/css href="static/style.css">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="icon" type="image/x-icon" href="static/favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png">　
+<link rel="manifest" href="./manifest.json">
+<link rel="manifest" href="manifest.webmanifest" />
 
 <div class=page>
     <div class="heading">
@@ -13,7 +16,7 @@
     </div>
 
     <div class="buttonarea">
-        <a href="index.html" class="btn">ガチャを回す</a>
+        <a href="./" class="btn">ガチャを回す</a>
     </div>
     <div id="result" class="result"></div>
 </div>
@@ -21,6 +24,7 @@
 <script src="menu.json.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/alasql@0.6"></script>
 <script src="gacha.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/pwacompat" crossorigin="anonymous"></script>
 <script>
     ! function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -31,4 +35,10 @@
             fjs.parentNode.insertBefore(js, fjs);
         }
     }(document, "script", "twitter-wjs");
+</script>
+<script>
+    // service workerが有効なら、service-worker.js を登録します
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./service-worker.js').then(function () { console.log('Service Worker Registered'); });
+    }
 </script>

@@ -1,0 +1,13 @@
+{
+    "short_name": "Saizeriya1000",
+    "name": "Saizeriya1000yen-gacha",
+    "display": "standalone",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "static/apple-touch-icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
