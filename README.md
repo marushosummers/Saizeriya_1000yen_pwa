@@ -1,1 +1,5 @@
 # Saizeriya_1000yen_pwa
+
+# Saizeriya_1000yen
+1000円以内でサイゼリヤメニューの組合わせを出力する
+PWAに対応しました
