@@ -1,5 +1,5 @@
 // cache name, cache files
-var CACHE_NAME = 'saizeriya-cache-v2';
+var CACHE_NAME = 'saizeriya-cache-v1';
 var urlsToCache = [
     '/index.html',
     '/static/style.css',
