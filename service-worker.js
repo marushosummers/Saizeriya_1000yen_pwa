@@ -1,5 +1,5 @@
-// キャッシュファイルの指定
-var CACHE_NAME = 'saizeriya-chache-v1';
+// cache name, cache files
+var CACHE_NAME = 'saizeriya-cache-v1';
 var urlsToCache = [
     '/saizeriya-1000yen.marusho.io/',
     '/saizeriya-1000yen.marusho.io/index.html',
