@@ -4,7 +4,7 @@ var urlsToCache = [
     '/index.html',
     '/static/style.css',
     '/gacha.js',
-    '/menu.json.js',
+    '/menu.json.js'
 ];
 
 // install cache
