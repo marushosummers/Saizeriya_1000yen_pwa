@@ -28,4 +28,4 @@ result.innerHTML += '<div class="box rst"><h2>計 ' + totalPrice + '円　' + to
 // tweet result
 text += "\n計 " + totalPrice + "円 " + totalCalorie + "kcal 塩分 " + Math.round(totalSalt * 10) / 10 + "g" + "\n\n"
 
-document.getElementById('result').innerHTML += '<div class="footer"><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://saizeriya-1000yen.marusho.io/" data-text="text" data-lang="ja" data-count="horizontal" data-hashtags="サイゼリヤガチャ" data-size="large">Tweet</a></div>'
+document.getElementById('result').innerHTML += '<div class="footer"><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://saizeriya-1000yen.marusho.io/" data-text="' + text + '" data-lang="ja" data-count="horizontal" data-hashtags="サイゼリヤガチャ" data-size="large">Tweet</a></div>'
