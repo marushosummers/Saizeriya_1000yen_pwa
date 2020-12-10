@@ -1,10 +1,10 @@
 // キャッシュファイルの指定
-var CACHE_NAME = 'saizeriya-chache';
+var CACHE_NAME = 'saizeriya-chache-v1';
 var urlsToCache = [
-    '/marushosummers.github.io/',
-    '/marushosummers.github.io/index.html',
-    '/marushosummers.github.io/gacha.js',
-    '/marushosummers.github.io/menu.json.js',
+    '/saizeriya-1000yen.marusho.io/',
+    '/saizeriya-1000yen.marusho.io/index.html',
+    '/saizeriya-1000yen.marusho.io/gacha.js',
+    '/saizeriya-1000yen.marusho.io/menu.json.js',
 ];
 
 // install
