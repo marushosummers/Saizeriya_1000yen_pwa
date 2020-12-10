@@ -1,10 +1,10 @@
 // cache name, cache files
-var CACHE_NAME = 'saizeriya-cache-v1';
+var CACHE_NAME = 'saizeriya-cache-v2';
 var urlsToCache = [
-    '/saizeriya-1000yen.marusho.io/',
-    '/saizeriya-1000yen.marusho.io/index.html',
-    '/saizeriya-1000yen.marusho.io/gacha.js',
-    '/saizeriya-1000yen.marusho.io/menu.json.js',
+    '/index.html',
+    '/static/style.css',
+    '/gacha.js',
+    '/menu.json.js',
 ];
 
 // install cache
