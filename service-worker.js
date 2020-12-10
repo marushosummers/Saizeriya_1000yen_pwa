@@ -7,7 +7,7 @@ var urlsToCache = [
     '/saizeriya-1000yen.marusho.io/menu.json.js',
 ];
 
-// install
+// install cache
 self.addEventListener('install', function (event) {
     event.waitUntil(
         caches
@@ -18,17 +18,35 @@ self.addEventListener('install', function (event) {
     );
 });
 
-self.addEventListener('activate', function (e) {
-    console.log('[ServiceWorker] Activate');
-});
-
-// reload
+// use cache
 self.addEventListener('fetch', function (event) {
     event.respondWith(
-        caches
-        .match(event.request)
-        .then(function (response) {
-            return response ? response : fetch(event.request);
+        caches.open(CACHE_NAME).then(function (cache) {
+            return cache.match(event.request).then(function (response) {
+                return response || fetch(event.request).then(function (response) {
+                    return caches.open(CACHE_NAME).then(function (cache) {
+                        cache.put(event.request, response.clone());
+                        return response;
+                    });
+                });
+            });
+        })
+    );
+});
+
+// refresh cache
+self.addEventListener('activate', function (event) {
+    event.waitUntil(
+        caches.keys().then(function (cacheNames) {
+            return Promise.all(
+                cacheNames.filter(function (cacheName) {
+                    return cacheName !== CACHE_NAME;
+                }).map(function (cacheName) {
+                    return caches.delete(cacheName);
+                })
+            );
+        }).then(function () {
+            clients.claim();
         })
     );
 });
