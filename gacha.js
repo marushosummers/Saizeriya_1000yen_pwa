@@ -18,7 +18,7 @@ while (budget <= 1000) {
     var food = candidates[randNum];
     result.innerHTML += '<div class="box menu"><h2>' + food.name + '</h2><p>' + food.price + '円　' + food.calorie + 'kcal　塩分 ' + Math.round(food.salt * 10) / 10 + 'g</p></div>';
     // add text for tweet
-    text += str(food.name) + "\n"
+    text += food.name + "\n"
     totalPrice += food.price
     totalCalorie += food.calorie
     totalSalt += food.salt
@@ -26,6 +26,6 @@ while (budget <= 1000) {
 }
 result.innerHTML += '<div class="box rst"><h2>計 ' + totalPrice + '円　' + totalCalorie + 'kcal　塩分' + Math.round(totalSalt * 10) / 10 + 'g</h2></div>';
 // tweet result
-text += "\n計 " + str(budget) + "円 " + str(calorie) + "kcal 塩分 " + str(round(salt, 1)) + "g" + "\n\n"
+text += "\n計 " + totalPrice + "円 " + totalCalorie + "kcal 塩分 " + Math.round(totalSalt * 10) / 10 + "g" + "\n\n"
 
 document.getElementById('result').innerHTML += '<div class="footer"><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://saizeriya-1000yen.marusho.io/" data-text="text" data-lang="ja" data-count="horizontal" data-hashtags="サイゼリヤガチャ" data-size="large">Tweet</a></div>'
