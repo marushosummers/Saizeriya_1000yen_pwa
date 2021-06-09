@@ -3,7 +3,7 @@ MENUS = [{
     "name_en": "GrilledSpicyChicken",
     "name": "辛味チキン",
     "price": 300,
-    "calorie": 374,
+    "calorie": 369,
     "salt": 2.2
 }, {
     "order_code": "AA02",
@@ -11,14 +11,14 @@ MENUS = [{
     "name": "アロスティチーニ",
     "price": 400,
     "calorie": 224,
-    "salt": 0.6
+    "salt": 0.4
 }, {
     "order_code": "AA03",
     "name_en": "SautedSpinachwithBacon",
     "name": "ほうれん草のソテー",
     "price": 200,
-    "calorie": 123,
-    "salt": 1.3
+    "calorie": 142,
+    "salt": 1.1
 }, {
     "order_code": "AA04",
     "name_en": "FriedShrimp",
@@ -31,8 +31,8 @@ MENUS = [{
     "name_en": "GrilledEscargots",
     "name": "エスカルゴのオーブン焼き",
     "price": 400,
-    "calorie": 256,
-    "salt": 1.6
+    "calorie": 248,
+    "salt": 1.0
 }, {
     "order_code": "AA06",
     "name_en": "GreenPeaswithBacon",
@@ -43,12 +43,19 @@ MENUS = [{
 }, {
     "order_code": "AA07",
     "name_en": "GrilledSpicySausage",
-    "name": "チョリソー",
+    "name": "チョリソー(辛味ソーセージ)",
     "price": 400,
-    "calorie": 393,
-    "salt": 2.0
+    "calorie": 420,
+    "salt": 3.0
 }, {
     "order_code": "AA08",
+    "name_en": "AsparaguswithPecorinoCheese&Egg",
+    "name": "アスパラガスの温サラダ",
+    "price": 300,
+    "calorie": 140,
+    "salt": 0.8
+}, {
+    "order_code": "AA09",
     "name_en": "GrilledPotatowithCheese",
     "name": "フリウリ風フリコ",
     "price": 300,
@@ -59,15 +66,8 @@ MENUS = [{
     "name_en": "GrilledGreenMusselswithVegetableSalsa",
     "name": "ムール貝のガーリック焼き",
     "price": 400,
-    "calorie": 164,
-    "salt": 1.3
-}, {
-    "order_code": "AA11",
-    "name_en": "SautedCabbagewithAnchovy",
-    "name": "キャベツとアンチョビのソテー",
-    "price": 200,
-    "calorie": 85,
-    "salt": 1.7
+    "calorie": 170,
+    "salt": 1.4
 }, {
     "order_code": "AA12",
     "name_en": "BuffaloMozzarellaCheesewithTomato",
@@ -77,11 +77,11 @@ MENUS = [{
     "salt": 0.4
 }, {
     "order_code": "AA13",
-    "name_en": "PickledMixVegetables",
-    "name": "白菜のミックスピクルス",
+    "name_en": "ShreddedCarrot",
+    "name": "爽やかにんじんサラダ",
     "price": 200,
-    "calorie": 66,
-    "salt": 1.5
+    "calorie": 92,
+    "salt": 1.3
 }, {
     "order_code": "AA14",
     "name_en": "SalamifromMilano",
@@ -90,23 +90,30 @@ MENUS = [{
     "calorie": 95,
     "salt": 1.1
 }, {
+    "order_code": "AA15",
+    "name_en": "GrilledPotato",
+    "name": "カリッとポテト",
+    "price": 250,
+    "calorie": 376,
+    "salt": 2.2
+}, {
     "order_code": "AA16",
     "name_en": "ProsciuttofromParma",
     "name": "プロシュート",
     "price": 400,
-    "calorie": 162,
-    "salt": 1.8
+    "calorie": 55,
+    "salt": 1.4
 }, {
     "order_code": "AA17",
     "name_en": "GrilledPotatowithCheese&Anchovy",
     "name": "アンチョビのフリコ",
     "price": 400,
-    "calorie": 551,
-    "salt": 4.1
+    "calorie": 461,
+    "salt": 3.3
 }, {
     "order_code": "AA21",
     "name_en": "GrilledSkeweredLamb",
-    "name": "アロスティチーニ Wサイズ",
+    "name": "アロスティチーニ Wサイズ(4本)",
     "price": 800,
     "calorie": 448,
     "salt": 1.2
@@ -131,13 +138,6 @@ MENUS = [{
     "price": 600,
     "calorie": 190,
     "salt": 2.2
-}, {
-    "order_code": "AA25",
-    "name_en": "GrilledPotatowithCheese",
-    "name": "スパイシーフリコ",
-    "price": 350,
-    "calorie": 425,
-    "salt": 3.3
 }, {
     "order_code": "AA26",
     "name_en": "ItalianInnardsStew",
@@ -196,24 +196,17 @@ MENUS = [{
     "salt": 0.1
 }, {
     "order_code": "DE02",
-    "name_en": "Meringata",
-    "name": "メリンガータ",
+    "name_en": "Capuccino",
+    "name": "カプチーノ(アイスケーキ)",
     "price": 200,
-    "calorie": 139,
-    "salt": 0.0
-}, {
-    "order_code": "DE03",
-    "name_en": "CoffeeJellywithMilkGelato",
-    "name": "コーヒーゼリー(ミルクアイスのせ)",
-    "price": 300,
-    "calorie": 162,
+    "calorie": 114,
     "salt": 0.1
 }, {
     "order_code": "DE05",
     "name_en": "ItalianGelato",
     "name": "イタリアンジェラート",
     "price": 250,
-    "calorie": 100,
+    "calorie": 121,
     "salt": 0.1
 }, {
     "order_code": "DE06",
@@ -231,18 +224,18 @@ MENUS = [{
     "salt": 0.1
 }, {
     "order_code": "DE08",
-    "name_en": "Meringata&ItalianCustardPudding",
-    "name": "プリンとメリンガータの盛合せ",
+    "name_en": "Capuccino&ItalianCustardPudding",
+    "name": "プリンとカプチーノの盛合せ",
     "price": 400,
-    "calorie": 355,
-    "salt": 0.1
+    "calorie": 330,
+    "salt": 0.2
 }, {
     "order_code": "DE10",
-    "name_en": "PannacottawithCaramelSauce&Apple",
-    "name": "キャラメルりんごのパンナコッタ",
+    "name_en": "PannacottawithCassis&BlueberrySauce",
+    "name": "カシスとブルーベリーのパンナコッタ",
     "price": 400,
-    "calorie": 210,
-    "salt": 0.2
+    "calorie": 186,
+    "salt": 0.1
 }, {
     "order_code": "DE11",
     "name_en": "LemonSorbet",
@@ -279,19 +272,12 @@ MENUS = [{
     "calorie": 182,
     "salt": 0.1
 }, {
-    "order_code": "DE16",
-    "name_en": "Tiramisu",
-    "name": "ティラミスクラシコ ファミリーサイズ",
-    "price": 1800,
-    "calorie": 1374,
-    "salt": 0.6
-}, {
     "order_code": "DG01",
     "name_en": "DoriawithMeatSauce",
     "name": "ミラノ風ドリア",
     "price": 300,
     "calorie": 521,
-    "salt": 2.5
+    "salt": 2.6
 }, {
     "order_code": "DG02",
     "name_en": "DoriawithMeatSauce&Cheese",
@@ -304,78 +290,43 @@ MENUS = [{
     "name_en": "DoriawithMeatSauce&Egg",
     "name": "半熟卵のミラノ風ドリア",
     "price": 350,
-    "calorie": 611,
+    "calorie": 604,
     "salt": 2.7
-}, {
-    "order_code": "DG04",
-    "name_en": "DoriawithMeatSauce&Caponata",
-    "name": "いろどり野菜のミラノ風ドリア",
-    "price": 400,
-    "calorie": 570,
-    "salt": 3.0
 }, {
     "order_code": "DG05",
     "name_en": "DoriawithMeatSauce&SetPetitFocaccia",
     "name": "セットプチフォッカ付きミラノ風ドリア",
     "price": 400,
-    "calorie": 626,
-    "salt": 2.9
+    "calorie": 628,
+    "salt": 3.0
 }, {
     "order_code": "DG06",
     "name_en": "SpinachGratinwithBacon&Salami",
     "name": "ほうれん草のグラタン",
     "price": 400,
-    "calorie": 521,
+    "calorie": 529,
     "salt": 1.9
 }, {
     "order_code": "DG07",
     "name_en": "Tomato&CreamGratinwithShrimp",
-    "name": "エビクリームグラタンペンネ",
+    "name": "エビクリームグラタン",
     "price": 400,
-    "calorie": 517,
-    "salt": 2.1
-}, {
-    "order_code": "DG08",
-    "name_en": "Paella",
-    "name": "シーフードパエリア",
-    "price": 600,
-    "calorie": 595,
-    "salt": 3.6
-}, {
-    "order_code": "DG09",
-    "name_en": "ShrimpRisottowithTomato&Cream",
-    "name": "エビと野菜のトマトクリームリゾット",
-    "price": 400,
-    "calorie": 320,
-    "salt": 2.4
-}, {
-    "order_code": "DG10",
-    "name_en": "HAYASHI StewwithTurmericRice",
-    "name": "ハヤシ&ターメリックライス",
-    "price": 500,
-    "calorie": 676,
-    "salt": 3.9
-}, {
-    "order_code": "DG11",
-    "name_en": "HAYASHI StewwithTurmericRice",
-    "name": "半熟卵のハヤシ&ターメリックライス",
-    "price": 550,
-    "calorie": 766,
-    "salt": 4.1
+    "calorie": 530,
+    "salt": 2.0
 }, {
     "order_code": "MT01",
     "name_en": "HamburgSteak",
     "name": "ハンバーグステーキ",
     "price": 400,
-    "calorie": 560,
+    "calorie": 594,
     "salt": 2.8
 }, {
     "order_code": "MT02",
     "name_en": "GrilledChickenwithVegetableSalsa",
     "name": "若鶏のディアボラ風",
     "price": 500,
-    "calorie": 672,
-    "salt": 2.7
+    "calorie": 726,
+    "salt": 2.8
 }, {
     "order_code": "MT03",
     "name_en": "HamburgSteakwithCheese&TomatoSauce",
@@ -384,40 +335,26 @@ MENUS = [{
     "calorie": 670,
     "salt": 2.9
 }, {
-    "order_code": "MT04",
-    "name_en": "GrilledChickenwithCheese&TomatoSauce",
-    "name": "柔らかチキンのチーズ焼き",
-    "price": 500,
-    "calorie": 716,
-    "salt": 2.7
-}, {
     "order_code": "MT07",
     "name_en": "HamburgSteakwithVegetableSalsa",
     "name": "ディアボラ風ハンバーグ",
     "price": 500,
-    "calorie": 632,
+    "calorie": 666,
     "salt": 3.1
 }, {
     "order_code": "MT08",
     "name_en": "HamburgSteakwithMushroomDemi-GlaceSauce",
     "name": "デミグラスソースのハンバーグ",
     "price": 500,
-    "calorie": 606,
+    "calorie": 641,
     "salt": 3.1
 }, {
     "order_code": "MT09",
     "name_en": "RibSteak",
     "name": "リブステーキ",
     "price": 1000,
-    "calorie": 606,
-    "salt": 2.0
-}, {
-    "order_code": "MT13",
-    "name_en": "GrilledLambwithVegetableSalsa&Mushroom Tomato",
-    "name": "ラムときのこのきこり風",
-    "price": 700,
-    "calorie": 560,
-    "salt": 3.4
+    "calorie": 640,
+    "salt": 2.1
 }, {
     "order_code": "MT14",
     "name_en": "BIGGrilledSpicyChicken",
@@ -430,33 +367,40 @@ MENUS = [{
     "name_en": "HamburgSteakwithGrilledSpicySausage",
     "name": "チョリソーとハンバーグの盛合せ",
     "price": 550,
-    "calorie": 675,
+    "calorie": 712,
     "salt": 3.7
+}, {
+    "order_code": "MT16",
+    "name_en": "LambRumpSteak",
+    "name": "ラムのランプステーキ",
+    "price": 900,
+    "calorie": 337,
+    "salt": 2.7
 }, {
     "order_code": "PA01",
     "name_en": "SpaghettiTARAKOSauce",
     "name": "タラコソースシシリー風",
     "price": 400,
-    "calorie": 550,
-    "salt": 2.0
+    "calorie": 551,
+    "salt": 1.9
 }, {
     "order_code": "PA02",
     "name_en": "SpaghettiwithMeatSauce",
     "name": "ミートソースボロニア風",
     "price": 400,
-    "calorie": 571,
-    "salt": 2.8
+    "calorie": 579,
+    "salt": 2.9
 }, {
     "order_code": "PA03",
     "name_en": "SpaghettiPEPERONCINO",
     "name": "ペペロンチーノ",
     "price": 300,
-    "calorie": 497,
+    "calorie": 535,
     "salt": 1.6
 }, {
     "order_code": "PA04",
     "name_en": "SpaghettiwithTomato&Bacon",
-    "name": "パルマ風スパゲッティ",
+    "name": "パルマ風スパゲッティ(トマト味)",
     "price": 400,
     "calorie": 716,
     "salt": 2.7
@@ -465,8 +409,8 @@ MENUS = [{
     "name_en": "SpaghettiCARBONARA",
     "name": "カルボナーラ",
     "price": 500,
-    "calorie": 738,
-    "salt": 2.1
+    "calorie": 731,
+    "salt": 2.0
 }, {
     "order_code": "PA06",
     "name_en": "SpaghettiwithShrimp&Broccoli,Tomato&Cream",
@@ -475,47 +419,47 @@ MENUS = [{
     "calorie": 668,
     "salt": 2.9
 }, {
+    "order_code": "PA07",
+    "name_en": "SpaghettiwithGreenSauce&PecorinoCheese",
+    "name": "ペストジェノベーゼ",
+    "price": 500,
+    "calorie": 714,
+    "salt": 1.7
+}, {
     "order_code": "PA08",
     "name_en": "SpaghettiAGLIOOLIO",
     "name": "アーリオ・オーリオ",
     "price": 300,
-    "calorie": 497,
-    "salt": 1.5
+    "calorie": 534,
+    "salt": 1.6
 }, {
     "order_code": "PA09",
     "name_en": "ShortPastawithTomatoBacon&Chilli",
     "name": "アラビアータ",
     "price": 400,
-    "calorie": 601,
-    "salt": 2.5
-}, {
-    "order_code": "PA10",
-    "name_en": "SpaghettiVONGOLE",
-    "name": "スープ入り塩味ボンゴレ",
-    "price": 500,
-    "calorie": 564,
-    "salt": 3.0
+    "calorie": 629,
+    "salt": 2.6
 }, {
     "order_code": "PA11",
     "name_en": "SpaghettiNERODISEPPIA",
     "name": "イカの墨入りスパゲッティ",
     "price": 500,
-    "calorie": 578,
+    "calorie": 614,
     "salt": 2.4
 }, {
     "order_code": "PA12",
     "name_en": "SpaghettiwithMeatSauce",
-    "name": "ミートソースボロニア風",
-    "price": 400,
-    "calorie": 571,
-    "salt": 2.8
+    "name": "半熟卵のミートソースボロニア風",
+    "price": 450,
+    "calorie": 662,
+    "salt": 3.1
 }, {
-    "order_code": "PA13",
-    "name_en": "SpaghettiPEPERONCINOwithCabbage&Bacon",
-    "name": "キャベツのペペロンチーノ",
-    "price": 400,
-    "calorie": 663,
-    "salt": 1.9
+    "order_code": "PA17",
+    "name_en": "SpaghettiPEPERONCINOwithEgg",
+    "name": "半熟卵のペペロンチーノ",
+    "price": 350,
+    "calorie": 618,
+    "salt": 1.7
 }, {
     "order_code": "PA51",
     "name_en": "SpaghettiTARAKOSauce",
@@ -559,6 +503,13 @@ MENUS = [{
     "calorie": 1160,
     "salt": 3.5
 }, {
+    "order_code": "PA57",
+    "name_en": "SpaghettiwithGreenSauce&PecorinoCheese",
+    "name": "ペストジェノベーゼ Wサイズ",
+    "price": 700,
+    "calorie": 1224,
+    "salt": 2.9
+}, {
     "order_code": "PA58",
     "name_en": "SpaghettiAGLIOOLIO",
     "name": "アーリオ・オーリオ Wサイズ",
@@ -580,32 +531,32 @@ MENUS = [{
     "calorie": 809,
     "salt": 3.4
 }, {
-    "order_code": "PA63",
-    "name_en": "SpaghettiPEPERONCINOwithCabbage&Bacon",
-    "name": "キャベツのペペロンチーノ Wサイズ",
-    "price": 600,
-    "calorie": 995,
+    "order_code": "PA67",
+    "name_en": "SpaghettiPEPERONCINOwithEgg",
+    "name": "半熟卵のペペロンチーノ Wサイズ",
+    "price": 500,
+    "calorie": 1050,
     "salt": 2.9
 }, {
     "order_code": "PZ01",
     "name_en": "PIZZAwithBuffaloMozzarellaCheese",
     "name": "マルゲリータピザ",
     "price": 400,
-    "calorie": 568,
-    "salt": 2.5
+    "calorie": 557,
+    "salt": 2.4
 }, {
     "order_code": "PZ02",
     "name_en": "PIZZAwithTripleBuffaloMozzarellaCheese",
     "name": "バッファローモッツァレラのピザ",
     "price": 500,
-    "calorie": 575,
-    "salt": 2.3
+    "calorie": 566,
+    "salt": 2.2
 }, {
     "order_code": "PZ03",
     "name_en": "PIZZAwithBacon",
     "name": "パンチェッタのピザ",
     "price": 400,
-    "calorie": 646,
+    "calorie": 635,
     "salt": 2.9
 }, {
     "order_code": "PZ04",
@@ -616,18 +567,18 @@ MENUS = [{
     "salt": 2.9
 }, {
     "order_code": "PZ05",
+    "name_en": "PIZZAwithRocket&Anchovy",
+    "name": "アンチョビとルーコラのピザ",
+    "price": 400,
+    "calorie": 568,
+    "salt": 4.5
+}, {
+    "order_code": "PZ06",
     "name_en": "CornPIZZAwithWhiteSauce",
     "name": "たっぷりコーンのピザ",
     "price": 400,
     "calorie": 669,
-    "salt": 2.8
-}, {
-    "order_code": "PZ06",
-    "name_en": "PIZZAwithRocket&Anchovy",
-    "name": "アンチョビとルーコラのピザ",
-    "price": 400,
-    "calorie": 543,
-    "salt": 4.7
+    "salt": 2.6
 }, {
     "order_code": "PZ08",
     "name_en": "SausagePIZZAwithWhiteSauce",
@@ -665,18 +616,18 @@ MENUS = [{
     "salt": 3.6
 }, {
     "order_code": "PZ55",
-    "name_en": "CornPIZZAwithWhiteSauce",
-    "name": "たっぷりコーンのピザ Wチーズ",
-    "price": 500,
-    "calorie": 836,
-    "salt": 3.5
-}, {
-    "order_code": "PZ56",
     "name_en": "PIZZAwithRocket&Anchovy",
     "name": "アンチョビとルーコラのピザ Wチーズ",
     "price": 500,
     "calorie": 679,
     "salt": 5.9
+}, {
+    "order_code": "PZ56",
+    "name_en": "CornPIZZAwithWhiteSauce",
+    "name": "たっぷりコーンのピザ Wチーズ",
+    "price": 500,
+    "calorie": 836,
+    "salt": 3.5
 }, {
     "order_code": "PZ58",
     "name_en": "SausagePIZZAwithWhiteSauce",
@@ -731,14 +682,14 @@ MENUS = [{
     "name_en": "MiniFicelle",
     "name": "ミニフィセル",
     "price": 150,
-    "calorie": 188,
+    "calorie": 189,
     "salt": 1.0
 }, {
     "order_code": "RP09",
     "name_en": "GarlicToast",
     "name": "ガーリックトースト",
     "price": 200,
-    "calorie": 252,
+    "calorie": 245,
     "salt": 1.1
 }, {
     "order_code": "SA01",
@@ -756,80 +707,66 @@ MENUS = [{
     "salt": 1.4
 }, {
     "order_code": "SA03",
-    "name_en": "RocketSaladwithPecorinoCheese&Olive",
-    "name": "彩りイタリアンサラダ Lサイズ",
+    "name_en": "RocketSaladwithCarrot&Olive",
+    "name": "ガーデンサラダ Lサイズ",
     "price": 500,
-    "calorie": 321,
-    "salt": 2.2
-}, {
-    "order_code": "SA04",
-    "name_en": "RocketSaladwithPecorinoCheese&Olive",
-    "name": "彩りイタリアンサラダ",
-    "price": 350,
-    "calorie": 214,
+    "calorie": 243,
     "salt": 1.5
 }, {
+    "order_code": "SA04",
+    "name_en": "RocketSaladwithCarrot&Olive",
+    "name": "ガーデンサラダ",
+    "price": 350,
+    "calorie": 161,
+    "salt": 1.0
+}, {
     "order_code": "SA05",
-    "name_en": "SaladwithChicken&Broccoli",
-    "name": "チキンとブロッコリーのサラダ Lサイズ",
+    "name_en": "CheeseSaladwithChicken&Broccoli&CrushedBread",
+    "name": "チキンのシーザーサラダ Lサイズ",
     "price": 500,
-    "calorie": 274,
-    "salt": 2.5
+    "calorie": 281,
+    "salt": 2.2
 }, {
     "order_code": "SA06",
-    "name_en": "SaladwithChicken&Broccoli",
-    "name": "チキンとブロッコリーのサラダ",
+    "name_en": "CheeseSaladwithChicken&Broccoli&CrushedBread",
+    "name": "チキンのシーザーサラダ",
     "price": 350,
-    "calorie": 182,
-    "salt": 1.7
-}, {
-    "order_code": "SA07",
-    "name_en": "SaladSeaweedwithOkra",
-    "name": "わかめとオクラのサラダ Lサイズ",
-    "price": 500,
-    "calorie": 214,
-    "salt": 4.4
-}, {
-    "order_code": "SA08",
-    "name_en": "SaladSeaweedwithOkra",
-    "name": "わかめとオクラのサラダ",
-    "price": 350,
-    "calorie": 143,
-    "salt": 3.0
+    "calorie": 188,
+    "salt": 1.4
 }, {
     "order_code": "SU01",
     "name_en": "CreamCornSoup",
     "name": "コーンクリームスープ",
     "price": 150,
-    "calorie": 142,
+    "calorie": 146,
     "salt": 1.1
 }, {
     "order_code": "SU02",
-    "name_en": "ClamChowderwithChineseCabbage",
-    "name": "白菜のクラムチャウダー",
-    "price": 300,
-    "calorie": 281,
-    "salt": 1.8
-}, {
-    "order_code": "SU03",
-    "name_en": "MushroomSoup",
-    "name": "マッシュルームスープ",
-    "price": 150,
-    "calorie": 130,
-    "salt": 0.9
-}, {
-    "order_code": "SU04",
-    "name_en": "OnionSoupwithBread&Cheese",
-    "name": "たまねぎのズッパ",
+    "name_en": "MinestroneofNavyBean&GreenSauce",
+    "name": "リグーリア風ミネストローネ",
     "price": 300,
     "calorie": 223,
-    "salt": 1.8
+    "salt": 1.7
+}, {
+    "order_code": "SU03",
+    "name_en": "ColdAsparagus&PotatoSoup",
+    "name": "冷たいアスパラガスのスープ",
+    "price": 250,
+    "calorie": 206,
+    "salt": 1.1
+}, {
+    "order_code": "SU04",
+    "name_en": "CabbageSoup",
+    "name": "田舎風やわらかキャベツのスープ",
+    "price": 300,
+    "calorie": 294,
+    "salt": 2.1
 }, {
     "order_code": "TP01",
     "name_en": "topping",
     "name": "トッピング半熟卵",
     "price": 50,
-    "calorie": 90,
+    "calorie": 83,
     "salt": 0.2
 }, {
     "order_code": "TP02",
@@ -838,13 +775,6 @@ MENUS = [{
     "price": 100,
     "calorie": 78,
     "salt": 0.8
-}, {
-    "order_code": "TP03",
-    "name_en": "topping",
-    "name": "ガルムソース&野菜ペースト",
-    "price": 150,
-    "calorie": 99,
-    "salt": 1.1
 }, {
     "order_code": "TP04",
     "name_en": "topping",
@@ -861,7 +791,7 @@ MENUS = [{
     "salt": 1.4
 }, {
     "order_code": "TP07",
-    "name_en": "topping",
+    "name_en": "Cassis&BlueberrySauce",
     "name": "フルーツソース(カシス&ブルーベリー)",
     "price": 100,
     "calorie": 40,
